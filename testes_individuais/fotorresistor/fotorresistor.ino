@@ -1,6 +1,5 @@
-int ledPin = 3;
-
-const int fotorresistorPin = A0;
+const int ledPin = 3;
+int valueFotorresistor;
 
 void setup() {
     Serial.begin(9600);
@@ -8,12 +7,12 @@ void setup() {
 }
 
 void loop() {
-    int value = analogRead(fotorresistorPin);
+    valueFotorresistor = analogRead(A0);
 
-    Serial.println("Analog  Value: ");
-    Serial.println(value);
-    
-    if (value > 100) {
+    Serial.println("Fotorresistor  Value: ");
+    Serial.println(valueFotorresistor);
+
+    if (valueFotorresistor > 100) {
         digitalWrite(ledPin, LOW);
     } else {
         digitalWrite(ledPin,  HIGH);
