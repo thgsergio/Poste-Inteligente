@@ -49,5 +49,5 @@ void loop() {
     	digitalWrite(lightWhite, LOW);
     }
   
-    delay(250);
+    delay(1000);
 }
