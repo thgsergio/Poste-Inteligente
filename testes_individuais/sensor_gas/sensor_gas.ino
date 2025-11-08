@@ -1,7 +1,7 @@
 const int ledRed = 2;
 const int ledYellow = 3;
 const int ledGreen = 4;
-int valueFotorresistor, sensorRead;
+int sensorRead;
 
 void setup() {
 	pinMode(ledRed, OUTPUT);
@@ -11,11 +11,8 @@ void setup() {
 }
 
 void loop() {
-    valueFotorresistor = analogRead(A0);
 	sensorRead = analogRead(A1);
-  
-    Serial.print("Fotorresistor  Value: ");
-    Serial.println(valueFotorresistor);
+
 	Serial.print("Sensor  Value: ");
     Serial.println(sensorRead);
       
