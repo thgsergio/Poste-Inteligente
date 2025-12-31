@@ -11,19 +11,19 @@ void setup() {
 	pinMode(ledRed, OUTPUT);
 	pinMode(ledYellow, OUTPUT);
 	pinMode(ledGreen, OUTPUT);
-  	pinMode(lightWhite, OUTPUT);
-  	pinMode(ldrPin, INPUT);
-  	pinMode(sensorPin, INPUT);
+  pinMode(lightWhite, OUTPUT);
+  pinMode(ldrPin, INPUT);
+  pinMode(sensorPin, INPUT);
 	Serial.begin(9600);
 }
 
 void loop() {
     ldrRead = analogRead(ldrPin);
-	sensorRead = analogRead(sensorPin);
+	  sensorRead = analogRead(sensorPin);
   
     Serial.print("Fotorresistor  Value: ");
     Serial.println(ldrRead);
-	Serial.print("Sensor  Value: ");
+	  Serial.print("Sensor  Value: ");
     Serial.println(sensorRead);
       
   	if(sensorRead > 240){
@@ -41,8 +41,9 @@ void loop() {
       	digitalWrite(ledYellow, LOW);
       	digitalWrite(ledGreen, HIGH);
   	}
-  
-	if(ldrRead < 300){
+  Serial.print("LDR Read: ");
+  Serial.println(ldrRead);
+	if(ldrRead < 100){
     	digitalWrite(lightWhite, HIGH);
     }
 	else{
