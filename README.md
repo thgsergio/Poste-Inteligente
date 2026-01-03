@@ -1,11 +1,32 @@
 
+<style>
+    .image-row {
+        display: flex;
+        gap: 10px; 
+        height: 300px;
+    }
+
+    .image-row img {
+        width: 200px; 
+        height: auto; 
+        border-radius: 8px;
+        object-fit: cover;
+    }
+</style>
+
 
 # Poste Inteligente
 
 
 A tecnologia está em constante evolução! Então por que não fazer a natureza também acompanhar esse avanço?
 
-<img width="659" height="326" alt="image" src="https://github.com/user-attachments/assets/d2958218-e6b6-441a-a15e-20864a4a71ba" />
+<div class="image-row">
+    <img src="./src/poste_finalizado.jpg" alt="Poste Inteligente">
+    <img src="./src/poste_aceso.jpg" alt="Poste Aceso">
+</div>
+
+
+---
 
 
 O Projeto Poste Inteligente consiste numa solução sustentável para os problemas de iluminação pública. Com o auxílio de Arduino, sensores e painéis solares, o objetivo esse projeto é monitorar a qualidade do ar da região e propor o desenvolvimento de postes que utilizam energia solar para seu funcionamento.
@@ -23,7 +44,7 @@ Além disso, a fim de realizar o controle de quando acender o Poste e sinalizar 
 
 ## ⚙️ Componentes
 
-- 2 Baterias Recarregáveis 18650
+- 1 Bateria Recarregável 18650
 
 - 1 Suporte de Bateria 1s 18650
 
@@ -53,34 +74,12 @@ Além disso, a fim de realizar o controle de quando acender o Poste e sinalizar 
 
 ### Circuito adaptador de Tensão
 
+![circuito arduino](/src/circuito_adaptador_de_tensao.png)
 
+
+---
 
 ### Circuito com Arduino
 
-![circuito final atualizado](circuito_final_atualizado.png)
-
-
-
-
-
-
-## rascunho
-
-Circuito Poste Inteligente
-
-Painel Solar
-
--> Diodo Schottky
-
--> Conversor Buck 5V
-
--> Módulo Carregador TP4056
-
--> Conversor Boost 5V
-
--> Arduino
-
---> Resistor -> LED de Alta Luminosidade
-
---> Sensor de Qualidade do Ar
+![circuito arduino](/src/circuito_arduino.png)
 
