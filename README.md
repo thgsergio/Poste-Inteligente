@@ -1,29 +1,12 @@
 
-<style>
-    .image-row {
-        display: flex;
-        gap: 10px; 
-        height: 300px;
-    }
-
-    .image-row img {
-        width: 200px; 
-        height: auto; 
-        border-radius: 8px;
-        object-fit: cover;
-    }
-</style>
-
 
 # Poste Inteligente
 
 
 A tecnologia está em constante evolução! Então por que não fazer a natureza também acompanhar esse avanço?
 
-<div class="image-row">
-    <img src="./src/poste_finalizado.jpg" alt="Poste Inteligente">
-    <img src="./src/poste_aceso.jpg" alt="Poste Aceso">
-</div>
+<img  src="./src/poste_finalizado.jpg" alt="Poste Inteligente" width="200">
+<img src="./src/poste_aceso.jpg" alt="Poste Aceso" width="200">
 
 
 ---
