@@ -5,8 +5,7 @@
 
 A tecnologia está em constante evolução! Então por que não fazer a natureza também acompanhar esse avanço?
 
-<img  src="./src/poste_finalizado.jpg" alt="Poste Inteligente" width="200">
-<img src="./src/poste_aceso.jpg" alt="Poste Aceso" width="200">
+<img  src="./src/poste_finalizado.png" alt="Poste Finalizado" width="450">
 
 
 ---
